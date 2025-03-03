@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>翻訳ボタン付きWebページ</title>
+  </head>
+  <body>
+    <h1>翻訳したいコンテンツ</h1>
+    <div id="content-to-translate">
+      <p>これは翻訳されるコンテンツです。日本語で書かれています。</p>
+      <p></p>
+    </div>
+
+    <div>
+      <input type="radio" id="english" name="language" value="en" checked />
+      <label for="english">英語</label>
+
+      <input type="radio" id="chinese" name="language" value="zh" />
+      <label for="chinese">中国語</label>
+
+      <input type="radio" id="french" name="language" value="fr" />
+      <label for="french">フランス語</label>
+
+      <input type="radio" id="german" name="language" value="de" />
+      <label for="german">ドイツ語</label>
+    </div>
+
+    <button id="translate-button">翻訳する</button>
+
+    <h2>システムメッセージ</h2>
+    <div id="translation-result">
+      万が一エラーが発生した場合は、ここにエラーメッセージが表示されるかもしれません。
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
